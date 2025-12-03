@@ -159,7 +159,7 @@ void setup_wifi() {
 void onMqttConnect(esp_mqtt_client_handle_t client_handle) {
   client.subscribe(std::string(sub_topic), [](const std::string &payload) {
     timer_ms = String(payload.c_str()).toInt();
-    timer_ms = timer_ms * 100;
+    timer_ms = timer_ms * 60;
     Serial.println(timer_ms);
   });
 }
