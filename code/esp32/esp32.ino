@@ -25,7 +25,6 @@ const char *server = "mqtt://10.10.2.127:1883";
 const char *sub_max_time = WC_ID_PATH "/max_time_ms";
 const char *pub_time_remaining = WC_ID_PATH "/time_remaining_ms";
 const char *pub_in_use = WC_ID_PATH "/in_use";
-//const char *pub_door_distance = WC_ID_PATH "/etc/door_distance_cm";
  
 const char *client_id = "wc" WC_ID;
 
